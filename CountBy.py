@@ -13,9 +13,6 @@ end_num = 100
 count_by = 2
 
 break_num = end_num + start_num
-
-# write a while loop that uses break_num as the ongoing number to 
-#   check against end_num
 while  break_num < end_num:
     break_num += count_by
 
