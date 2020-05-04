@@ -1,0 +1,64 @@
+Know list comprehensions:
+List comprehensions are not found in other languages, but are very common in Python.
+
+Know how to build dictionaries
+- can use dictionary get method to retrieve the value of a key in a dictionary
+- iterate through both keys and values, use the built-in method items like this:
+Ex:
+for key, value in cast.items():
+    print("Actor: {}    Role: {}".format(key, value))
+
+Indentation: Space or Tabs?
+In Python, indents conventionally come in multiples of four spaces. 
+Be strict about following this convention, because changing the indentation can completely change the meaning of the code. 
+If you are working on a team of Python programmers, it's important that everyone follows the same indentation convention!
+
+For loops:
+Using the range() Function with for Loops
+range() is a built-in function used to create an iterable sequence of numbers. 
+You will frequently use range() with a for loop to repeat an action a certain number of times. 
+Any variable can be used to iterate through the numbers, but Python programmers conventionally use i, as in this example:
+
+for i in range(3):
+    print("Hello!")
+
+For vs while:
+for loops are ideal when the number of iterations is known or finite.
+Examples:
+When you have an iterable collection (list, string, set, tuple, dictionary)
+for name in names:
+When you want to iterate through a loop for a definite number of times, using range()
+for i in range(5):
+
+while loops are ideal when the iterations need to continue until a condition is met.
+Examples:
+When you want to use comparison operators
+while count <= 100:
+When you want to loop based on receiving specific user input.
+while user_input == 'y':
+
+Know break and continue keywords:
+- used in both for and while loops, break terminates a loop and continue skips one iteration of a loop
+
+Know zip, how to unzip using asterisk, and enumerate:
+Zip Ex:
+list(zip(['a', 'b', 'c'], [1, 2, 3])) would output [('a', 1), ('b', 2), ('c', 3)].
+
+Zip Ex:
+letters = ['a', 'b', 'c']
+nums = [1, 2, 3]
+
+for letter, num in zip(letters, nums):
+    print("{}: {}".format(letter, num))
+In addition to zipping two lists together, you can unzip a list into tuples using an asterisk.
+
+some_list = [('a', 1), ('b', 2), ('c', 3)]
+letters, nums = zip(*some_list)
+
+What is enumerate?
+enumerate is a built in function that returns an iterator of tuples containing indices and values of a list
+
+Enumerate Ex:
+letters = ['a', 'b', 'c', 'd', 'e']
+for i, letter in enumerate(letters):
+    print(i, letter)
